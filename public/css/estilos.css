@@ -1,0 +1,11 @@
+.fondo{
+	background-color: gray;
+}
+
+.nomargen{
+	margin: 0;
+}
+
+.esquinas{
+	border-radius: 0;
+}
