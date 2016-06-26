@@ -23,20 +23,12 @@
 			<div class="container" align="center">
 				
 						<a href="{{url('/bienvenida')}}" class="btn btn-success btn-lg active">  Acceder  </a>
-						<br>
-						<br>
-						<br>
-						<a href="{{url('/registro')}}" class="btn btn-link">Registro Universidades</a>
-						<br>
-						<a href="{{url('/RegistroEgresados')}}" class="btn btn-link">Registro Egresados</a>
+
 			</div>
 
 		<footer class="row">
 			<div class="col-xs-12 text-center">
 			<br>
-			<br>
-			<br>
-				Itzel & Javier &copy;
 			</div>
 		</footer>
 	</div>
