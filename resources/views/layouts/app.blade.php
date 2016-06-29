@@ -39,9 +39,9 @@
             document.getElementById('titulo').style.visibility='visible';
             document.getElementById('titulo').style.display='initial';
             
-            document.getElementById('trabajo').disabled=false;
-            document.getElementById('trabajo').style.visibility='visible';
-            document.getElementById('trabajo').style.display='initial';
+            document.getElementById('trabaja').disabled=false;
+            document.getElementById('trabaja').style.visibility='visible';
+            document.getElementById('trabaja').style.display='initial';
             document.getElementById('edad').disabled=false;
             document.getElementById('edad').style.visibility='visible';
             document.getElementById('edad').style.display='initial';
@@ -88,9 +88,9 @@
             document.getElementById('titulo').disabled=true;
             document.getElementById('titulo').style.visibility='hidden';
             document.getElementById('titulo').style.display='none';
-            document.getElementById('trabajo').disabled=true;
-            document.getElementById('trabajo').style.visibility='hidden';
-            document.getElementById('trabajo').style.display='none';
+            document.getElementById('trabaja').disabled=true;
+            document.getElementById('trabaja').style.visibility='hidden';
+            document.getElementById('trabaja').style.display='none';
             document.getElementById('edad').disabled=true;
             document.getElementById('edad').style.visibility='hidden';
             document.getElementById('edad').style.display='none';

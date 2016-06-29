@@ -54,9 +54,9 @@ class AuthController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
-            'nombre_universidad' => 'required',
             'titulo' => 'required',
-            'trabajo' => 'required',
+            'nombre_universidad' => 'required',
+            'trabaja' => 'required',
             'edad' => 'required',
             'telefono' => 'required',
             'sexo' => 'required',
@@ -69,7 +69,6 @@ class AuthController extends Controller
             'con_especializados' => 'required',
             'lenguas_extranjeras' => 'required',
             'adaptabilidad' => 'required',
-
         ]);
     }
 
@@ -81,10 +80,11 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+        /*
         $datosextra = new Datosextra();
-        $datosextra->nombre_universidad = $data['nombre_universidad'];
         $datosextra->titulo = $data['titulo'];
-        $datosextra->trabajo = $data['trabajo'];
+        $datosextra->nombre_universidad = $data['nombre_universidad'];
+        $datosextra->trabaja = $data['trabaja'];
         $datosextra->edad = $data['edad'];
         $datosextra->telefono = $data['telefono'];
         $datosextra->sexo = $data['sexo'];
@@ -97,15 +97,15 @@ class AuthController extends Controller
         $datosextra->con_especializados = $data['con_especializados'];
         $datosextra->lenguas_extranjeras = $data['lenguas_extranjeras'];
         $datosextra->adaptabilidad = $data['adaptabilidad'];
-        $datosextra->save();
+        $datosextra->save();*/
 
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'nombre_universidad' => $data['nombre_universidad'],
             'titulo' => $data['titulo'],
-            'trabajo' => $data['trabajo'],
+            'nombre_universidad' => $data['nombre_universidad'],
+            'trabaja' => $data['trabaja'],
             'edad' => $data['edad'],
             'telefono' => $data['telefono'],
             'sexo' => $data['sexo'],
@@ -118,7 +118,6 @@ class AuthController extends Controller
             'con_especializados' => $data['con_especializados'],
             'lenguas_extranjeras' => $data['lenguas_extranjeras'],
             'adaptabilidad' => $data['adaptabilidad'],
-
         ]);
     }
 }

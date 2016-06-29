@@ -21,3 +21,5 @@ Route::get('/', 'funcionesController@index');
 Route::auth();
 
 Route::get('/bienvenida', 'HomeController@bienvenida');
+Route::post('/guardarInformacion', 'HomeController@guardarInformacion');
+
